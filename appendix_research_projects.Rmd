@@ -1,0 +1,27 @@
+# Appendix A
+## PhD Project Abstract
+```{r phd_project}
+vroom::vroom('data/project_abstracts.csv') %>% 
+  dplyr::arrange(desc(when)) %>%
+  dplyr::filter(display == T) %>% 
+  dplyr::filter(type == 'phd_project') %>%
+  vitae::detailed_entries(what = authors, when, with = title, where, why)
+```
+
+## MSc Project Abstract
+```{r msc_project}
+vroom::vroom('data/project_abstracts.csv') %>% 
+  dplyr::arrange(desc(when)) %>%
+  dplyr::filter(display == T) %>% 
+  dplyr::filter(type == 'msc_project') %>%
+  vitae::detailed_entries(what = authors, when, with = title, where, why)
+```
+
+## Undergraduate Research Project Abstracts
+```{r undergrad_project}
+vroom::vroom('data/project_abstracts.csv') %>% 
+  dplyr::arrange(desc(when)) %>%
+  dplyr::filter(display == T) %>% 
+  dplyr::filter(type == 'undergrad_project') %>%
+  vitae::detailed_entries(what = authors, when, with = title, where, why)
+```
