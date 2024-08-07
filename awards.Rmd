@@ -2,7 +2,7 @@
 
 ```{r awards}
 vroom::vroom('data/awards.csv') %>% 
-  arrange(desc(when)) %>%
+  dplyr::arrange(desc(when)) %>%
   dplyr::filter(display == T) %>% 
   vitae::detailed_entries(what = with, when, with = what, where, why)
 ```
