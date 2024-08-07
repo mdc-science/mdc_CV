@@ -1,0 +1,21 @@
+"what","with","where","when","when_start","when_end","why","display"
+"R for Biochemists 201","Biochemical Society, London, UK","Online","Aug, 2024",NA,NA,"Tidy data techniques, advanced visualizations, statistics and using R Markdown.",NA
+"R for Biochemists 101","Biochemical Society, London, UK","Online","Mar, 2024",NA,NA,"R programming skills for data manipulation and visualization using biochemical data.",NA
+"Introduction to Python and Machine Learning for the Biosciences","Institute for Research & Innovation in Health (i3S), University of Porto","Porto, Portugal","Oct, 2023",NA,"Oct, 2023","Basic concepts of machine learning and data science in biosciences with Python.",TRUE
+"Advanced Laboratory Animal Science Course (FELASA accredited 020/08F)","Institute for Research & Innovation in Health (i3S), University of Porto","Porto, Portugal","May, 2023",NA,"May, 2023","Functions A (carrying out procedures on animals), B (designing procedures and projects), and D (killing animals).",TRUE
+"Advanced Laboratory Animal Science Course (FELASA accredited 020/08F)","Institute for Research & Innovation in Health (i3S), University of Porto","Porto, Portugal","May, 2023",NA,"May, 2023","Anesthesia for minor procedures and Anesthesia for surgical procedures.",TRUE
+"Advanced Laboratory Animal Science Course (FELASA accredited 020/08F)","Institute for Research & Innovation in Health (i3S), University of Porto","Porto, Portugal","May, 2023",NA,"May, 2023","Covered species: Mouse, Rat, Zebrafish, and Fish.",TRUE
+"Nanodegree in Programming for Data Science with R","Udacity, Mountain View, CA, USA","Online","Apr, 2022",NA,"Apr, 2022","SQL fundamentals, R programming fundamentals, and Github version control and sharing.",TRUE
+"Medical Immunology","University of Brasilia","Brasilia, Brazil","Nov, 2021","Jul, 2021","Nov, 2021","Innate immunity, lymphocyte formation, antibodies, immune responses, cytokines, immunization, and autoimmune diseases.",NA
+"Medical Immunology","University of Brasilia","Brasilia, Brazil","Nov, 2021","Jul, 2021","Nov, 2021","80-hour course",NA
+"Writing in the Sciences","Stanford University on Coursera","Online","Oct, 2019",NA,NA,NA,NA
+"Use and Management of Laboratory Animals","University of Sao Paulo","Online","Feb, 2019",NA,NA,"60-hour course",NA
+"Basic Operation and Maintenance of HPLC Systems","Shimadzu","Brasilia, Brazil","Apr, 2017",NA,NA,NA,NA
+"International Course on Comparative Physiology of Respiration","Sao Paulo State University","Jaboticabal, Brazil","Jul, 2015",NA,NA,NA,NA
+"Chemical Ecology in Agriculture","Brazilian Agricultural Research Corporation","Brasilia, Brazil","Jul, 2013",NA,NA,NA,NA
+"Fundamentals of Pharmacology","University of Pennsylvania on Coursera","Online","Jul, 2013",NA,NA,"Pharmacokinetics, pharmacodynamics and the drug development process.",NA
+"Genes and the Human Condition (From Behavior to Biotechnology)","University of Maryland, College Park on Coursera","Online","Jun, 2013",NA,NA,NA,NA
+"Oxygen and Redox Processes","Brazilian Society for Biochemistry and Molecular Biology","Foz do Iguaçu, Brazil","May, 2010",NA,NA,NA,NA
+"Herpetology","Goias State University","Anápolis, Brazil","Aug, 2007",NA,NA,NA,NA
+"Microsoft Network Administrator","National Service for Commercial Learning","Brasilia, Brazil","Dec, 2006",NA,NA,"110-hour course",NA
+"Assembly, Maintenance, and Configuration of Computers","National Service for Commercial Learning","Brasilia, Brazil","Sep, 2006",NA,NA,"90-hour course",NA
