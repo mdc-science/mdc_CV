@@ -1,0 +1,19 @@
+# Presentations
+
+## Oral Presentations
+
+```{r oral_presentations}
+vroom::vroom('data/presentations.csv') %>% 
+  dplyr::filter(display == T & type == 'oral') %>% 
+  dplyr::arrange(desc(when)) %>%
+  vitae::detailed_entries(when, what = with, with = what, where)
+```
+
+## Poster Presentations
+
+```{r poster_presentations}
+vroom::vroom('data/presentations.csv') %>% 
+  dplyr::filter(display == T & type == 'poster') %>% 
+  dplyr::arrange(desc(when)) %>%
+  vitae::detailed_entries(when, what = with, with = what, where)
+```
