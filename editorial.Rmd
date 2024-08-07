@@ -1,0 +1,37 @@
+# Editorial and Peer Review Experience
+## Editorial Board
+```{r editorial_board}
+vroom::vroom('data/editorial.csv') %>% 
+  dplyr::arrange(order) %>% 
+  dplyr::mutate(when = if_else(is.na(when_end), 
+                        glue("{when_start}"), 
+                        glue("{when_start} - {when_end}"))) %>%
+  dplyr::filter(display == T & type == 'editorial') %>% 
+  vitae::detailed_entries(what, when, with)
+```
+
+## Reviewer Board
+```{r reviewer_board}
+vroom::vroom('data/editorial.csv') %>% 
+  dplyr::arrange(order) %>% 
+  dplyr::mutate(when = if_else(is.na(when_end), 
+                        glue("{when_start}"), 
+                        glue("{when_start} - {when_end}"))) %>%
+  dplyr::filter(display == T & type == 'reviewer') %>% 
+  vitae::detailed_entries(what, when, with)
+```
+
+## Special Issues
+```{r special_issue}
+vroom::vroom('data/editorial.csv') %>% 
+  dplyr::arrange(order) %>% 
+  dplyr::mutate(when = if_else(is.na(when_end), 
+                        glue("{when_start}"), 
+                        glue("{when_start} - {when_end}"))) %>%
+  dplyr::filter(display == T & type == 'special_issue') %>% 
+  vitae::detailed_entries(what, when, with)
+```
+
+## Peer Review
+
+`r knitr::knit_child("data/peer_review.txt")`
