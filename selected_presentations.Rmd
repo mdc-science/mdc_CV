@@ -1,0 +1,8 @@
+# Selected Presentations
+
+```{r selected_presentations}
+vroom::vroom('data/presentations.csv') %>% 
+  dplyr::filter(display == T & selected == T) %>% 
+  dplyr::arrange(desc(when)) %>%
+  vitae::detailed_entries(when, what = with, with = what, where, why)
+```
