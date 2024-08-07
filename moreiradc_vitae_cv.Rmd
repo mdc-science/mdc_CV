@@ -1,0 +1,311 @@
+---
+name: Daniel
+surname: Moreira
+position: "Researcher"
+# pronouns: she/her
+address: "Faculty of Medicine, University of Brasilia"
+profilepic: 'img/profile_pic.jpeg' 
+phone: +55 61 99239 9558
+www: mdcscience.com
+email: "moreiradc@unb.br"
+#twitter: mdc_science
+#github: mdc-science
+#linkedin: moreiradc
+orcid: 0000-0003-1961-7281
+googlescholar: 4MTUwDgAAAAJ&hl
+#aboutme: 'Hi! I am Daniel'
+date: "`r format(Sys.time(), '%B %Y')`"
+headcolor: 101085
+output:
+  vitae::awesomecv:
+    page_total: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+library(readxl)
+library(here)
+library(glue)
+library(tidyverse)
+
+read_excel_sheets <- function(file_path) {
+  # Get the names of all sheets in the Excel file
+  sheet_names <- excel_sheets(file_path)
+  
+  # Loop through the sheet names and read each sheet
+  for (sheet_name in sheet_names) {
+    # Read the sheet and assign it to a variable with the same name
+    assign(sheet_name, read_excel(file_path, sheet = sheet_name), envir = .GlobalEnv)
+  }
+}
+read_excel_sheets(here('data', '2024.07.14_my_cv_data.xlsx'))
+```
+
+# Education
+```{r}
+education %>% 
+  mutate(when = glue("{when_start} - {when_end}")) %>% 
+  dplyr::filter(display == T) %>% 
+  detailed_entries(what = with, when, with = what, where, why)
+```
+
+# Additional Training
+```{r}
+additional_training %>% 
+  dplyr::filter(display == T) %>% 
+  detailed_entries(what = with, when, with = what, where, why)
+```
+
+# Research Experience and Appointments
+```{r}
+research %>% 
+  mutate(when = glue("{when_start} - {when_end}")) %>% 
+  arrange(order) %>%
+  dplyr::filter(display == T) %>% 
+  detailed_entries(what, when, with, where, why)
+```
+
+# Professional Experience
+```{r}
+professional %>% 
+  mutate(when = glue("{when_start} - {when_end}")) %>% 
+  arrange(order) %>%
+  dplyr::filter(display == T) %>% 
+  detailed_entries(what, when, with, where, why)
+```
+# Selected Publications
+```{r}
+selected_pubs %>% 
+  dplyr::filter(display == T & vitae == "detailed") %>% 
+  detailed_entries(when, what = with, with = what, where, why)
+```
+
+```{r}
+selected_pubs %>% 
+  dplyr::filter(display == T & vitae == "brief") %>% 
+  brief_entries(what = with, when, with = what)
+```
+
+# Selected Presentations
+```{r}
+presentations %>% 
+  dplyr::filter(display == T & selected == T) %>% 
+  arrange(desc(when)) %>%
+  detailed_entries(when, what = with, with = what, where, why)
+```
+
+# Awards and Honors
+```{r}
+awards %>% 
+  arrange(desc(when)) %>%
+  dplyr::filter(display == T) %>% 
+  detailed_entries(what = with, when, with = what, where, why)
+```
+
+# Supervision
+```{r}
+supervision %>% 
+  arrange(desc(when)) %>%
+  dplyr::filter(display == T) %>% 
+  detailed_entries(what, when, with, where, why)
+```
+
+```{r}
+supervision %>% 
+  arrange(desc(when)) %>%
+  dplyr::filter(display == T) %>% 
+  brief_entries(what, when, with)
+```
+
+# Teaching
+
+# Certification, Licenses, and Professional Memberships
+
+```{r}
+certifications_membership %>% 
+  mutate(when = if_else(is.na(when_end), 
+                        glue("{when_start}"), 
+                        glue("{when_start} - {when_end}"))) %>% 
+  arrange(order) %>%
+  dplyr::filter(display == T) %>% 
+  detailed_entries(what, when, with, where, why)
+```
+
+# Funding
+
+# Editorial and Peer Review Experience
+## Editorial Board
+```{r}
+editorial %>% 
+  arrange(order) %>% 
+  mutate(when = if_else(is.na(when_end), 
+                        glue("{when_start}"), 
+                        glue("{when_start} - {when_end}"))) %>%
+  dplyr::filter(display == T & type == 'editorial') %>% 
+  detailed_entries(what, when, with)
+```
+
+## Reviewer Board
+```{r}
+editorial %>% 
+  arrange(order) %>% 
+  mutate(when = if_else(is.na(when_end), 
+                        glue("{when_start}"), 
+                        glue("{when_start} - {when_end}"))) %>%
+  dplyr::filter(display == T & type == 'reviewer') %>% 
+  detailed_entries(what, when, with)
+```
+
+## Special Issues
+```{r}
+editorial %>% 
+  arrange(desc(when)) %>% 
+  mutate(when = if_else(is.na(when_end), 
+                        glue("{when_start}"), 
+                        glue("{when_start} - {when_end}"))) %>%
+  dplyr::filter(display == T & type == 'special_issue') %>% 
+  detailed_entries(what, when, with, where)
+```
+
+## Peer Review
+I have been an active peer reviewer since 2012, building a verified record of >150 reviews for 40 different international indexed journals in the fields of redox biology, biochemistry, biotechnology, molecular biology and comparative physiology. Full peer review record in my [Web of Science](https://www.webofscience.com/wos/author/record/B-8591-2012) profile.
+
+# Organizing Committees
+
+# Ad hoc Evaluator
+
+# Examination Committee and Academic Degree Jury
+
+# References
+
+# Relevant Research Skills
+## Software
+## Wet Lab Techniques
+
+# Research Projects
+## Ongoing
+
+## Finalized
+
+# Science Popularization, Dissemination and Outreach Activities 
+
+# Publications 
+## Book Chapters
+```{r  results = 'asis'}
+# Load the data
+publications <- read.csv("/Users/moreiradc/Documents/R/my_sci_output/data/sci_outuput_database.csv")
+# Replace empty strings and strings with only spaces with NA
+replace_empty_with_na <- function(df) {
+  df[df == "" | df == " "] <- NA
+  return(df)
+}
+# Replacing
+publications <- replace_empty_with_na(publications)
+
+# Selecting chapters
+pub_chapters <- publications %>%
+  filter(type == 'chapter')
+
+# Function to highlight your name in bold and add a space after semicolons
+highlight_name <- function(authors) {
+  authors <- str_replace_all(authors, "Moreira, D.C.", "**Moreira, D.C.**")
+  authors <- str_replace_all(authors, ";", "; ")
+  return(authors)
+}
+
+# Function to format publication entries
+format_publication <- function(row) {
+  authors <- highlight_name(row['authors'])
+  title <- row['title_cv']
+  journal <- row['journal']
+  year <- row['year']
+  volume <- row['volume']
+  comment <- row['comment']
+  
+  if (!is.na(row['page_first'])) {
+    if (is.na(row['page_last']) || row['page_first'] == row['page_last']) {
+      pages <- row['page_first']
+    } else {
+      pages <- paste0(row['page_first'], "-", row['page_last'])
+    }
+  } else {
+    pages <- ""
+  }
+  
+  doi <- row['doi']
+  link <- row['url']
+  
+  formatted <- paste0(authors, " (", year, "). ", title, ". *", journal, "*",
+                      if (!is.na(volume)) paste0(", \\textbf{", volume, "}") else "",
+                      if (pages != "") paste0(", ", pages) else "",
+                      ". doi: [", doi, "](", link, ")",
+                      if (!is.na(comment) && comment != "") paste0(". \\textit{", comment, "}") else "")
+  
+  return(formatted)
+}
+
+# Apply the function to all rows
+pub_chapters_list <- apply(pub_chapters, 1, format_publication)
+
+# Print the formatted list
+cat(paste("•", pub_chapters_list, collapse = "\n\n"))
+```
+
+## Refereed Journal Papers
+```{r  results = 'asis'}
+# Removing book chapters
+pub_papers <- publications %>%
+  filter(type != 'chapter')
+
+# Apply the function to all rows
+pub_papers_list <- apply(pub_papers, 1, format_publication)
+
+# Print the formatted list
+cat(paste("•", pub_papers_list, collapse = "\n\n"))
+```
+
+# Presentations
+## Oral Presentations
+```{r}
+presentations %>% 
+  dplyr::filter(display == T & type == 'oral') %>% 
+  arrange(desc(when)) %>%
+  detailed_entries(when, what = with, with = what, where)
+```
+## Poster Presentations
+```{r}
+presentations %>% 
+  dplyr::filter(display == T & type == 'poster') %>% 
+  arrange(desc(when)) %>%
+  detailed_entries(when, what = with, with = what, where)
+```
+
+# Conference Abstracts
+
+# Research Visibility
+
+# Appendix X
+## PhD Project Abstract
+```{r}
+project_abstracts %>% 
+  filter(type == 'phd_project') %>%
+  dplyr::filter(display == T) %>% 
+  detailed_entries(what = authors, when, with = title, where, why)
+```
+
+## MSc Project Abstract
+```{r}
+project_abstracts %>% 
+  filter(type == 'msc_project') %>%
+  dplyr::filter(display == T) %>% 
+  detailed_entries(what = authors, when, with = title, where, why)
+```
+
+## Undergraduate Research Project Abstracts
+```{r}
+project_abstracts %>% 
+  filter(type == 'undergrad_project') %>%
+  dplyr::filter(display == T) %>% 
+  detailed_entries(what = authors, when, with = title, where, why)
+```
