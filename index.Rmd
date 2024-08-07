@@ -19,6 +19,7 @@ headcolor: 101085
 # aboutme: |
 #  I am a learning scientist, data-science/software developer, and internationally certified accessibility professional.
 date: '`r format(Sys.Date(), "%B %d, %Y")`'
+# date: "`r format(Sys.time(), '%B %Y')`"
 csl: "csl/apa7-cv-jy-edition.csl"
 header-includes:
   # allow URLs to break at any character
