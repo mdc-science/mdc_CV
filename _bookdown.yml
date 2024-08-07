@@ -1,0 +1,7 @@
+output_dir: "docs"
+rmd_files:
+  - "index.Rmd"
+  - "education.Rmd"
+  - "awards.Rmd"
+book_filename: "MoreiraDC_CV"
+delete_merged_file: true

@@ -1,0 +1,8 @@
+# Education
+
+```{r education}
+vroom::vroom('data/education.csv') %>% 
+  dplyr::mutate(when = glue("{when_start} - {when_end}")) %>% 
+  dplyr::filter(display == T) %>% 
+  vitae::detailed_entries(what = with, when, with = what, where, why)
+```

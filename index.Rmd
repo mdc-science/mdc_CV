@@ -1,0 +1,41 @@
+---
+title: Daniel Moreira's Curriculum Vitae
+graphics: yes
+name: Daniel
+surname: Moreira
+position: "Researcher"
+# pronouns: he/him/his
+address: "Faculty of Medicine, University of Brasilia"
+profilepic: 'img/profile_pic.jpeg' 
+phone: '+55 61 99239 9558'
+www: mdcscience.com
+email: "moreiradc@unb.br"
+#twitter: mdc_science
+github: mdc-science
+#linkedin: moreiradc
+orcid: 0000-0003-1961-7281
+googlescholar: 4MTUwDgAAAAJ&hl
+headcolor: 101085
+# aboutme: |
+#  I am a learning scientist, data-science/software developer, and internationally certified accessibility professional.
+date: '`r format(Sys.Date(), "%B %d, %Y")`'
+csl: "csl/apa7-cv-jy-edition.csl"
+header-includes:
+  # allow URLs to break at any character
+  - \usepackage{xurl}
+  # - \usepackage{fancyhdr}
+  # - \pagestyle{fancy}
+  # - \fancyhf{}
+  # - \fancyhead[R]{\thepage}
+knit: (function(input, ...) {lapply(bookdown::render_book(input, output_file = "docs/MoreiraDC_CV", output_format = "all", envir = globalenv(), ...), browseURL)})
+---
+
+```{r setup, include = FALSE}
+library(knitr)
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+library(tidyverse)
+library(vroom)
+library(here)
+library(glue)
+```
