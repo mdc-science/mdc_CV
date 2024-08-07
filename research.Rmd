@@ -1,0 +1,9 @@
+# Research Experience and Appointments
+
+```{r research}
+vroom::vroom('data/research.csv') %>% 
+  dplyr::mutate(when = glue("{when_start} - {when_end}")) %>% 
+  dplyr::arrange(order) %>%
+  dplyr::filter(display == T) %>% 
+  vitae::detailed_entries(what, when, with, where, why)
+```
