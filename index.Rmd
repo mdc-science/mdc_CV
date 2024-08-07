@@ -15,9 +15,17 @@ github: mdc-science
 #linkedin: moreiradc
 orcid: 0000-0003-1961-7281
 googlescholar: 4MTUwDgAAAAJ&hl
-headcolor: 101085
-# aboutme: |
-#  I am a learning scientist, data-science/software developer, and internationally certified accessibility professional.
+# headcolor: "00A388" # emerald
+# headcolor: "0395DE" # sky blue
+headcolor: "DC3522" # red
+# headcolor: "FF6138" # orange
+# headcolor: "27AE60" # nephritis (green)
+# headcolor: "95A5A6" # concrete (gray)
+# headcolor: "131A28" # darknight (dark gray)
+# headcolor: "4A1486" # dark purple
+# headcolor: "6A51A3" # purple
+aboutme: |
+  I am a researcher and data scientist in the life sciences with 10+ years experience in redox biology.
 date: '`r format(Sys.Date(), "%B %d, %Y")`'
 # date: "`r format(Sys.time(), '%B %Y')`"
 csl: "csl/apa7-cv-jy-edition.csl"
