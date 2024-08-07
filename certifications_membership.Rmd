@@ -1,0 +1,11 @@
+# Certification, Licenses, and Memberships
+
+```{r certifications_membership}
+vroom::vroom('data/certifications_membership.csv') %>%
+  dplyr::mutate(when = if_else(is.na(when_end), 
+                        glue("{when_start}"), 
+                        glue("{when_start} - {when_end}"))) %>% 
+  dplyr::arrange(order) %>%
+  dplyr::filter(display == T) %>% 
+  vitae::detailed_entries(what, when, with, where, why)
+```
