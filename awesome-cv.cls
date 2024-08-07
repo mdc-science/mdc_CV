@@ -149,6 +149,9 @@
 \definecolor{awesome-concrete}{HTML}{95A5A6}
 \definecolor{awesome-darknight}{HTML}{131A28}
 \colorlet{awesome}{awesome-red}
+% MDC colors
+\definecolor{my_color1}{HTML}{4A1486}
+\definecolor{my_color2}{HTML}{6A51A3}
 
 % Boolean value to switch section color highlighting
 \newbool{acvSectionColorHighlight}
