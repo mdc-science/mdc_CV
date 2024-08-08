@@ -25,7 +25,7 @@ headcolor: "DC3522" # red
 # headcolor: "4A1486" # dark purple
 # headcolor: "6A51A3" # purple
 aboutme: |
-  I am a researcher and data scientist in the life sciences with 10+ years experience in redox biology.
+  I am a researcher and data scientist in the life sciences with 10+ years experience in comparative biochemistry and redox biology.
 date: '`r format(Sys.Date(), "%B %d, %Y")`'
 # date: "`r format(Sys.time(), '%B %Y')`"
 csl: "csl/apa7-cv-jy-edition.csl"

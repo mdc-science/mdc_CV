@@ -1,4 +1,6 @@
-"what","with","where","when_start","when_end","why","display"
-"PhD in Biochemistry and Molecular Biology","Department of Cell Biology, Institute of Biological Sciences, University of Brasilia","Brasilia, Brazil","Mar, 2014","Nov, 2017","Academic degree recognized by the Portuguese Directorate General for Higher Education (DGES)",TRUE
-"MSc in Biochemistry and Molecular Biology","Department of Cell Biology, Institute of Biological Sciences,University of Brasilia","Brasilia, Brazil","Mar, 2012","Feb, 2014","Academic degree recognized by the Portuguese Directorate General for Higher Education (DGES)",TRUE
-"BSc in Biological Sciences","Institute of Biological Sciences, University of Brasilia","Brasilia, Brazil","Mar, 2008","Dec, 2011",NA,TRUE
+﻿what,with,where,when_start,when_end,why,display
+PhD in Biochemistry and Molecular Biology,"Department of Cell Biology, Institute of Biological Sciences, University of Brasilia","Brasilia, Brazil","Mar, 2014","Nov, 2017","Thesis Title: Redox Metabolism Adaptations to Extreme Environments: Mechanism, Distribution and Occurrence of the ""Preparation for Oxidative Stress"" Phenomenon.",TRUE
+PhD in Biochemistry and Molecular Biology,"Department of Cell Biology, Institute of Biological Sciences, University of Brasilia","Brasilia, Brazil","Mar, 2014","Nov, 2017",Academic degree recognized by the Portuguese Directorate General for Higher Education (DGES),TRUE
+MSc in Biochemistry and Molecular Biology,"Department of Cell Biology, Institute of Biological Sciences,University of Brasilia","Brasilia, Brazil","Mar, 2012","Feb, 2014",Dissertation Title: Free Radical Metabolism during Diapause in the Sunflower Caterpillar (*Chlosyne lacinia*),TRUE
+MSc in Biochemistry and Molecular Biology,"Department of Cell Biology, Institute of Biological Sciences,University of Brasilia","Brasilia, Brazil","Mar, 2012","Feb, 2014",Academic degree recognized by the Portuguese Directorate General for Higher Education (DGES),TRUE
+BSc in Biological Sciences,"Institute of Biological Sciences, University of Brasilia","Brasilia, Brazil","Mar, 2008","Dec, 2011",NA,TRUE

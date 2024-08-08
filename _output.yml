@@ -6,12 +6,12 @@ vitae::awesomecv:
   pandoc_args:
     # - --lua-filter="lua/multiple-bibliographies.lua"
     # - --lua-filter="lua/strong.lua"
-    - --lua-filter="lua/strong_testing.lua"
+    - --lua-filter="lua/strong_moreira_d.lua"
 vitae::markdowncv:
   theme: kjhealy
   keep_md: yes
   pandoc_args:
     # - --lua-filter="lua/multiple-bibliographies.lua"
     # - --lua-filter="lua/strong.lua"
-    - --lua-filter="lua/strong_testing.lua"
+    - --lua-filter="lua/strong_moreira_d.lua"
   

@@ -1,4 +1,4 @@
-# Selected Presentations
+# Selected Conference Presentations
 
 ```{r selected_presentations}
 vroom::vroom('data/presentations.csv') %>% 

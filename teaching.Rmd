@@ -1,1 +1,9 @@
-# Teaching
+# Teaching Experience
+
+IS569:Internship(spring2022).AdvisedAnkitaKhiratkar(MSIM).
+• IS589:IndependentStudy(spring2022).AdvisedChetnaBeri(MSIM).
+• INFO 399: Individual Study (spring 2022). Advised Leo Zhang (CS undergrad –> Currently, Master’s student at UCLA Data Science dept).
+• IS389:IndependentStudy(spring2022).AdvisedMisoKim(BSIS).
+• IS226:IntroductiontoHuman‐ComputerInteraction(fall2021).Co‐teachingwithDr.YangWang.
+• Served as an annual review committee member for iSchool Ph.d. student Smirity Kaushik (advisor Dr. Yang Wang) (spring 2022).
+• ServedasafieldexamcommitteememberforiSchoolPh.D.candidateJaihyunPark(advisorDr.RyanCordell) (spring 2022).

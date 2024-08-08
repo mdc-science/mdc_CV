@@ -1,4 +1,4 @@
-# Certification, Licenses, and Memberships
+# Certification, Licenses, and Membership
 
 ```{r certifications_membership}
 vroom::vroom('data/certifications_membership.csv') %>%

@@ -1,4 +1,4 @@
-# Research Experience and Appointments
+# Research Experience and Appointment
 
 ```{r research}
 vroom::vroom('data/research.csv') %>% 
