@@ -1,4 +1,11 @@
 # Full Publication List
 ## Book Chapters
+```{r book_chapters}
+vitae::bibliography_entries("bib/book_chapters.bib")
+```
 
 ## Refereed Journal Papers
+
+```{r journal_papers}
+vitae::bibliography_entries("bib/journal_papers.bib")
+```
