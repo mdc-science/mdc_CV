@@ -6,7 +6,7 @@ surname: Moreira
 position: "Researcher"
 # pronouns: he/him/his
 address: "Faculty of Medicine, University of Brasilia"
-profilepic: 'img/profile_pic.jpeg' 
+# profilepic: 'img/profile_pic.jpeg' 
 phone: '+55 61 99239 9558'
 www: mdcscience.com
 email: "moreiradc@unb.br"
@@ -17,9 +17,9 @@ orcid: 0000-0003-1961-7281
 googlescholar: 4MTUwDgAAAAJ&hl
 # headcolor: "00A388" # emerald
 # headcolor: "0395DE" # sky blue
-headcolor: "DC3522" # red
+# headcolor: "DC3522" # red
 # headcolor: "FF6138" # orange
-# headcolor: "27AE60" # nephritis (green)
+headcolor: "27AE60" # nephritis (green)
 # headcolor: "95A5A6" # concrete (gray)
 # headcolor: "131A28" # darknight (dark gray)
 # headcolor: "4A1486" # dark purple

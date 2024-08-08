@@ -1,0 +1,39 @@
+## Methods
+-	Animal Care (snails and insect colonies maintenance)
+-	Animal Euthanasia (rats, mice, bats, frogs, snails and insects)
+-	Animal Field Collection (bats, frogs and insects)
+-	Bacterial Transformation
+-	Basic Cell Culture
+-	cDNA Synthesis
+-	Cell Viability Assays (MTT, neutral red, and luminescent assays)
+-	Enzyme-linked immunosorbent assay (ELISA)
+-	Enzymatic Activity Assays (especially metabolic, antioxidant, and detoxification enzymes)
+-	Glutathione (reduced and disulfide) Measurement 
+-	Electrophoretic mobility shift assays (EMSA)
+-	Immunoblot (western blotting)
+-	In vitro colorimetric and fluorometric antioxidant assays (e.g., DPPH, ABTS, ORAC, etc.)
+-	Lactate Measurement
+-	Nucleic Acid Electrophoresis and Band Extraction
+-	Oxidative Stress Markers Measurement (e.g., TBARS, lipid hydroperoxides, and protein carbonyls)
+-	PCR 
+-	Plasmid DNA Purification (“Miniprep”)
+-	Primer Design
+-	Protein Electrophoresis and Gel Staining
+-	Quantitative HPLC Method Development and Analysis
+-	Protein, RNA, and DNA Extraction
+-	Synthetic Peptide Purification (HPLC)
+
+## Equipment
+* HPLC systems – analytical and semi-preparative setups (e.g., Shimadzu Modular HPLC)
+*	Microplate readers – end-point, kinetic, absorbance, and fluorescence assays (e.g., SpectraMax M3, iD3 etc.)
+*	Oxygraph (e.g., Hansatech Oxygraph Plus System)
+* Screen Printed Electrode Potentiostat
+*	Basic laboratory equipment, such as analytical balance; autoclave; centrifuge; fume hood; incubator; laminar flow hood; micropipette; optical microscope; nanodrop; pHmeter; protein and nucleic acids electrophoresis apparatus; spectrophotometer; vacuum concentrator; water distiller and purification systems; western blotting apparatus.
+
+## Software
+* GraphPad Prism (GraphPad Software)
+* LabSolutions (Shimadzu)
+* SoftMax Pro (Molecular Devices)
+* OxyTrace+ (Hansatech) 
+* MultiTrace (Palmsense) 
+* R Studio (Posit)

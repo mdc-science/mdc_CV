@@ -1,0 +1,21 @@
+## Comparative Biochemistry and Redox Biology
+
+* **Moreira,D. C.**, Carvajalino‑Fernández, J. M., Silva, W. P., Kuzniewski, F., Navas, C. A., De Carvalho, J. E. and Hermes‑Lima, M. (2020). Preparation for oxidative stress in *Proceratophrys cristiceps* (Anura, Odontophrynidae) naturally estivating in the Brazilian caatinga. *Science of The Total Environment*,723, 137957. DOI [10.1016/j.scitotenv.2020.137957](https://doi.org/10.1016/j.scitotenv.2020.137957).
+
+* Hermes-Lima, M.^¶^, **Moreira, D.C.**^¶^, Rivera-Ingraham, G.A., Giraud-Billoud, M., Genaro-Mattos, T.C. and Campos, E.G. 2015. Preparation for oxidative stress under hypoxia and metabolic depression: Revisiting the proposal two decades later. *Free Radical Biology and Medicine*, 89, 1122–1143. DOI [10.1016/j.freeradbiomed.2015.07.156](https://doi.org/10.1016/j.freeradbiomed.2015.07.156). ^¶^*These authors contributed equally*.
+
+## Insect Biochemistry
+
+* **Moreira, D. C.** and Hermes-Lima, M. (2024) Dynamics of redox metabolism during complete metamorphosis of insects: Insights from the sunflower caterpillar *Chlosyne lacinia* (Lepidoptera). *Antioxidants*, 12, 959. DOI [10.3390/antiox13080959](https://doi.org/10.3390/antiox13080959).
+
+* **Moreira, D.C.**, Paula, D.P. and Hermes-Lima, M. 2021. Changes in metabolism and antioxidant systems during tropical diapause in the sunflower caterpillar *Chlosyne lacinia* (Lepidoptera: Nymphalidae). *Insect Biochemistry and Molecular Biology*, 134, 103581. DOI [10.1016/j.ibmb.2021.103581](https://doi.org/10.1016/j.ibmb.2021.103581).
+
+## Analytical Chemistry
+
+* **Moreira, D. C.**, Carvalho, D. N., Santos, E. C., Relvas, J. B., Neves, M. A. D. and Mendes Pinto, I. (2024). Multi‐parametric decision system for analytical performance assessment of electrochemical (bio)sensors. *Advanced Materials Technologies*, 9, 2301464. DOI [10.1002/admt.202301464](https://doi.org/10.1002/admt.202301464).
+
+* **Moreira, D.C.** (2022). RGBradford: Accurate measurement of protein concentration using a smartphone cameraand the blue to green intensity ratio. *Analytical Biochemistry*, 655, 114839. DOI [10.1016/j.ab.2022.114839](https://doi.org/10.1016/j.ab.2022.114839)
+
+## Natural Products and Biotechnology
+
+* **Moreira, D. C.**, Batagin‐Neto, A. and Leite, J. R. S. A. (2024). Frog‐derived peptides and neuroprotection. In *Natural molecules in neuroprotection and neurotoxicity* (pp. 415–436). Elsevier. DOI [10.1016/B978-0-443-23763-8.00018-X](https://doi.org/10.1016/B978-0-443-23763-8.00018-X).

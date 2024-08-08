@@ -9,3 +9,33 @@ vitae::bibliography_entries("bib/book_chapters.bib")
 ```{r journal_papers}
 vitae::bibliography_entries("bib/journal_papers.bib")
 ```
+
+<!-- ## Comparative Biochemistry and Redox Biology -->
+<!-- ```{r papers_redox}
+vitae::bibliography_entries("bib/papers_redox.bib")
+``` -->
+
+<!-- ## Natural Products Biotechnology -->
+<!-- ```{r papers_nat_products}
+vitae::bibliography_entries("bib/papers_nat_products.bib")
+``` -->
+
+<!-- ## Analytical Chemistry -->
+<!-- ```{r papers_anal_chem}
+vitae::bibliography_entries("bib/papers_anal_chem.bib")
+``` -->
+
+<!-- ## Editorials -->
+<!-- ```{r papers_editorial}
+vitae::bibliography_entries("bib/papers_editorial.bib")
+``` -->
+
+<!-- ## Teaching -->
+<!-- ```{r papers_teaching}
+vitae::bibliography_entries("bib/papers_teaching.bib")
+``` -->
+
+<!-- ## Other -->
+<!-- ```{r papers_misc}
+vitae::bibliography_entries("bib/papers_misc.bib")
+``` -->

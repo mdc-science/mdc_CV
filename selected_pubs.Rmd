@@ -1,0 +1,3 @@
+# Selected Publications
+
+`r knitr::knit_child("data/selected_pubs.txt")`

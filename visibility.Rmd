@@ -1,1 +1,3 @@
-# Research Visibility
+# Research Visibility and Media Coverage
+
+`r knitr::knit_child("data/visibility.txt")`

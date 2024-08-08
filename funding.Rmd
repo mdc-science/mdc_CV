@@ -1,1 +1,52 @@
 # Funding
+
+```{r setup_funding, include=FALSE}
+research_grants <- read_csv("data/funding_grants.csv")
+scholarships_fellowships <- read_csv("data/funding_scholarship.csv")
+science_popularization_grants <- read_csv("data/funding_outreach.csv")
+mobility_grants_travel_awards <- read_csv("data/funding_mobility.csv")
+```
+
+## Research Grants
+
+```{r funding_grants}
+vroom::vroom('data/funding_grants.csv') %>% 
+  dplyr::mutate(when = if_else(is.na(when_end), 
+                        glue("{when_start}"), 
+                        glue("{when_start} - {when_end}"))) %>% 
+  dplyr::filter(display == T) %>% 
+  vitae::detailed_entries(what = role, when, with = project, why = funding, where)
+```
+
+## Scholarships and Fellowships
+
+```{r funding_scholarship}
+vroom::vroom('data/funding_scholarship.csv') %>% 
+  dplyr::mutate(when = if_else(is.na(when_end), 
+                        glue("{when_start}"), 
+                        glue("{when_start} - {when_end}"))) %>% 
+  dplyr::filter(display == T) %>% 
+  vitae::detailed_entries(what = role, when, with = project, why = funding, where)
+```
+
+## Science Popularization, Dissemination and Outreach Grants
+
+```{r funding_outreach}
+vroom::vroom('data/funding_outreach.csv') %>% 
+  dplyr::mutate(when = if_else(is.na(when_end), 
+                        glue("{when_start}"), 
+                        glue("{when_start} - {when_end}"))) %>% 
+  dplyr::filter(display == T) %>% 
+  vitae::detailed_entries(what = role, when, with = project, why = funding, where)
+```
+
+## Mobility Grants and Travel Awards
+
+```{r funding_mobility}
+vroom::vroom('data/funding_mobility.csv') %>% 
+  dplyr::mutate(when = if_else(is.na(when_end), 
+                        glue("{when_start}"), 
+                        glue("{when_start} - {when_end}"))) %>% 
+  dplyr::filter(display == T) %>% 
+  vitae::detailed_entries(when = when, with = project, why = funding, where = where)
+```

@@ -2,7 +2,7 @@
 ## Editorial Board
 ```{r editorial_board}
 vroom::vroom('data/editorial.csv') %>% 
-  dplyr::arrange(order) %>% 
+  dplyr::arrange(desc(when)) %>% 
   dplyr::mutate(when = if_else(is.na(when_end), 
                         glue("{when_start}"), 
                         glue("{when_start} - {when_end}"))) %>%
@@ -13,7 +13,7 @@ vroom::vroom('data/editorial.csv') %>%
 ## Reviewer Board
 ```{r reviewer_board}
 vroom::vroom('data/editorial.csv') %>% 
-  dplyr::arrange(order) %>% 
+  dplyr::arrange(desc(when)) %>% 
   dplyr::mutate(when = if_else(is.na(when_end), 
                         glue("{when_start}"), 
                         glue("{when_start} - {when_end}"))) %>%
@@ -24,14 +24,26 @@ vroom::vroom('data/editorial.csv') %>%
 ## Special Issues
 ```{r special_issue}
 vroom::vroom('data/editorial.csv') %>% 
-  dplyr::arrange(order) %>% 
+  dplyr::arrange(desc(when)) %>% 
   dplyr::mutate(when = if_else(is.na(when_end), 
                         glue("{when_start}"), 
                         glue("{when_start} - {when_end}"))) %>%
   dplyr::filter(display == T & type == 'special_issue') %>% 
-  vitae::detailed_entries(what, when, with)
+  vitae::detailed_entries(what, when, with, where)
 ```
 
 ## Peer Review
 
 `r knitr::knit_child("data/peer_review.txt")`
+
+## Other
+
+```{r other}
+vroom::vroom('data/editorial.csv') %>% 
+  dplyr::arrange(desc(when)) %>% 
+  dplyr::mutate(when = if_else(is.na(when_end), 
+                        glue("{when_start}"), 
+                        glue("{when_start} - {when_end}"))) %>%
+  dplyr::filter(display == T & type == 'other') %>% 
+  vitae::detailed_entries(what, when, with, where)
+```
