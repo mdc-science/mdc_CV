@@ -36,10 +36,11 @@ header-includes:
   # - \pagestyle{fancy}
   # - \fancyhf{}
   # - \fancyhead[R]{\thepage}
-knit: (function(input, ...) {lapply(bookdown::render_book(input, output_file = "docs/MoreiraDC_CV", output_format = "all", envir = globalenv(), ...), browseURL)})
+# knit: (function(input, ...) {lapply(bookdown::render_book(input, output_file = "docs/MoreiraDC_CV", output_format = "all", envir = globalenv(), ...), browseURL)})
+knit: (function(input, ...) {bookdown::render_book(input, output_file = "docs/MoreiraDC_CV", output_format = "all", envir = globalenv(), ...)})
 ---
 
-```{r setup, include = FALSE}
+```{r setup, include = FALSE, cache = FALSE}
 library(knitr)
 knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 library(vitae)
