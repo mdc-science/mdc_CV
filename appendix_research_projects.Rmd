@@ -1,4 +1,4 @@
-# Appendix A - Undergrad and Graduate Projects
+# Appendix - Undergrad and Graduate Projects
 ## PhD Project Abstract
 ```{r phd_project}
 vroom::vroom('data/project_abstracts.csv') %>% 

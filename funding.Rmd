@@ -41,12 +41,20 @@ vroom::vroom('data/funding_outreach.csv') %>%
 ```
 
 ## Mobility Grants and Travel Awards
-
-```{r funding_mobility}
+<!-- ```{r funding_mobility}
 vroom::vroom('data/funding_mobility.csv') %>% 
   dplyr::mutate(when = if_else(is.na(when_end), 
                         glue("{when_start}"), 
                         glue("{when_start} - {when_end}"))) %>% 
   dplyr::filter(display == T) %>% 
   vitae::detailed_entries(when = when, with = project, why = funding, where = where)
+``` -->
+
+```{r funding_mobility_short}
+vroom::vroom('data/funding_mobility.csv') %>% 
+  dplyr::mutate(when = if_else(is.na(when_end), 
+                        glue("{when_start}"), 
+                        glue("{when_start} - {when_end}"))) %>% 
+  dplyr::filter(display == T) %>% 
+  vitae::brief_entries(when = when, what = project, with = where)
 ```

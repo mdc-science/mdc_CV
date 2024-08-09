@@ -19,10 +19,10 @@ googlescholar: 4MTUwDgAAAAJ&hl
 # headcolor: "0395DE" # sky blue
 # headcolor: "DC3522" # red
 # headcolor: "FF6138" # orange
-headcolor: "27AE60" # nephritis (green)
+# headcolor: "27AE60" # nephritis (green)
 # headcolor: "95A5A6" # concrete (gray)
 # headcolor: "131A28" # darknight (dark gray)
-# headcolor: "4A1486" # dark purple
+headcolor: "4A1486" # dark purple
 # headcolor: "6A51A3" # purple
 aboutme: |
   I am a researcher and data scientist in the life sciences with 10+ years experience in comparative biochemistry and redox biology.

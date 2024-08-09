@@ -1,0 +1,6 @@
+# Appendix - Courses Attended
+
+```{r additional_training_full.csv}
+vroom::vroom('data/additional_training.csv') %>%
+  vitae::detailed_entries(what = with, when, with = what, where, why)
+```

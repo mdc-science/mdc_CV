@@ -23,8 +23,9 @@ rmd_files:
   - "publications.Rmd"
   - "presentations.Rmd"
   - "abstracts.Rmd"
-  - "visibility.Rmd"
-  - "appendix_research_projects.Rmd"
+  - "appendix_visibility.Rmd"
   - "appendix_skills.Rmd"
+  - "appendix_training_full.Rmd"
+  - "appendix_research_projects.Rmd"
 book_filename: "MoreiraDC_CV"
 delete_merged_file: true

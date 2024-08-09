@@ -1,1 +1,10 @@
 # References
+
+```{r references}
+vroom::vroom('data/references.csv') %>%
+  dplyr::filter(display == T) %>% 
+  dplyr::mutate(when = if_else(is.na(when_end), 
+                        glue("{when_start}"), 
+                        glue("{when_start} - {when_end}"))) %>%
+  vitae::detailed_entries(what = with, when, with = what, where, why)
+```
